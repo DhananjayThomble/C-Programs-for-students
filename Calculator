@@ -1,0 +1,55 @@
+void Div();
+void Mul();
+void Sub();
+void Add();
+void main()
+{
+    int n;
+    clrscr();
+    printf("1)Addition\n2)Subtraction\n");
+    printf("3)Multiplication \n4)Division \n");
+    printf("Enter your choice:- ");
+    scanf("%d",&n);
+    switch(n)
+    {
+	case 1: Add();
+		break;
+	case 2: Sub();
+		break;
+	case 3: Mul();
+		break;
+	case 4: Div();
+		break;
+
+	default:
+		printf("Enter Correct value!\n");
+    }
+getch();}
+void Add()
+{
+    int a,b;
+    printf("Enter two value: \n");
+    scanf("%d%d",&a,&b);
+    printf("=%d",a+b);
+}
+void Sub()
+{
+    int a,b;
+    printf("Enter two value: \n");
+    scanf("%d%d",&a,&b);
+    printf("=%d",a-b);
+}
+void Mul()
+{
+    int a,b;
+    printf("Enter two value: \n");
+    scanf("%d%d",&a,&b);
+    printf("=%d",a*b);
+}
+void Div()
+{
+    float a,b;
+    printf("Enter two value: \n");
+    scanf("%f%f",&a,&b);
+    printf("=%.2f",a/b);
+}
